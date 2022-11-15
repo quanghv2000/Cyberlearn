@@ -9,7 +9,7 @@ export default class App extends Component {
       id: 1,
       price: 30,
       name: "GUCCI G8850U",
-      url: "./assets/image/v1.png",
+      url: "https://res.cloudinary.com/dtjin3cf6/image/upload/v1668524852/Cyberlearn/ReactJS/Try%20Glasses/v1_ilqmgg.png",
       desc: "Light pink square lenses define these sunglasses, ending with amother of pearl effect tip. ",
     },
   };
@@ -72,7 +72,8 @@ export default class App extends Component {
     return (
       <div
         style={{
-          backgroundImage: "url(./assets/image/background.jpg",
+          backgroundImage:
+            "url(https://res.cloudinary.com/dtjin3cf6/image/upload/v1668524853/Cyberlearn/ReactJS/Try%20Glasses/background_hniydj.jpg)",
           backgroundRepeat: "no-repeat",
           height: "100vh",
           backgroundPosition: "center",
@@ -100,7 +101,7 @@ export default class App extends Component {
               <div className="col-6">
                 <div className="position-relative">
                   <img
-                    src="./assets/image/model.jpg"
+                    src="https://res.cloudinary.com/dtjin3cf6/image/upload/v1668524852/Cyberlearn/ReactJS/Try%20Glasses/model_p6unnq.jpg"
                     alt="model.jpg"
                     style={{ width: "250px", position: "absolute", right: 100 }}
                   />
@@ -112,7 +113,7 @@ export default class App extends Component {
                   />
                   <div style={glasseInfoStyle} className="pl-2 pt-1">
                     <p className="font-weight-bold text-dark mb-0">
-                      {this.state.glasses.name}
+                      {this.state.glasses.name} - ${this.state.glasses.price}
                     </p>
                     <p style={{ fontSize: "13px" }}>
                       {this.state.glasses.desc}
@@ -123,7 +124,7 @@ export default class App extends Component {
               <div className="col-6">
                 <div className="position-relative">
                   <img
-                    src="./assets/image/model.jpg"
+                    src="https://res.cloudinary.com/dtjin3cf6/image/upload/v1668524852/Cyberlearn/ReactJS/Try%20Glasses/model_p6unnq.jpg"
                     alt="model.jpg"
                     style={{ width: "250px", position: "absolute", left: 100 }}
                   />
