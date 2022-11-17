@@ -1,53 +1,69 @@
 import React, { Component } from "react";
-
-const cars = [
-  {
-    id: 1,
-    title: "Crystal Black",
-    type: "Pearl",
-    iconImg: require("./assets/icons/icon-black.jpg"),
-    carImg: require("./assets/products/black-car.jpg"),
-  },
-  {
-    id: 2,
-    title: "Modern Steel",
-    type: "Metallic",
-    iconImg: require("./assets/icons/icon-steel.jpg"),
-    carImg: require("./assets/products/steel-car.jpg"),
-  },
-  {
-    id: 3,
-    title: "Lunar Silver",
-    type: "Metallic",
-    iconImg: require("./assets/icons/icon-silver.jpg"),
-    carImg: require("./assets/products/silver-car.jpg"),
-  },
-  {
-    id: 4,
-    title: "Rallye Black",
-    type: "Pearl",
-    iconImg: require("./assets/icons/icon-red.jpg"),
-    carImg: require("./assets/products/red-car.jpg"),
-  },
-];
+import { cars, models, wheels } from "./data";
 
 export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      carInfo: {
-        id: 1,
-        title: "Crystal Black",
-        type: "Pearl",
-        iconImg: require("./assets/icons/icon-black.jpg"),
-        carImg: require("./assets/products/black-car.jpg"),
-      },
+      carInfo: cars[0],
     };
   }
 
-  handleCarSelected = (carSelected) => {
+  handleChangeCarModel = (model) => {
+    const carFound = cars.find((car) => car.modelId === model.id);
+
     this.setState({
-      carInfo: carSelected,
+      carInfo: carFound,
+    });
+  };
+
+  renderModels = () => {
+    return models.map((model, index) => {
+      return (
+        <div
+          className="card-body p-0 mt-1 ml-1 mr-1"
+          style={{ cursor: "pointer" }}
+          key={index}
+          onClick={() => {
+            this.handleChangeCarModel(model);
+          }}
+        >
+          <div className="d-flex border border-link p-2">
+            <img style={{ width: 40, height: 40 }} src={model.imgUrl} alt="" />
+            <div className="ml-3">
+              <h5 className="m-0 p-0" style={{ fontSize: 16 }}>
+                {model.name}
+              </h5>
+              <p className="m-0 p-0" style={{ fontSize: 14 }}>
+                {model.type}
+              </p>
+            </div>
+          </div>
+        </div>
+      );
+    });
+  };
+
+  renderWheels = () => {
+    return wheels.map((item, index) => {
+      return (
+        <div
+          className="card-body p-0 mt-1 ml-1 mr-1"
+          style={{ cursor: "pointer" }}
+          key={index}
+          onClick={() => {}}
+        >
+          <div className="d-flex border border-link p-2">
+            <img style={{ width: 60, height: 60 }} src={item.img} alt="" />
+            <div className="ml-3">
+              <h5 style={{ fontSize: 16 }}>{item.title}</h5>
+              <p className="m-0 p-0" style={{ fontSize: 16 }}>
+                ${item.price}
+              </p>
+            </div>
+          </div>
+        </div>
+      );
     });
   };
 
@@ -55,40 +71,54 @@ export default class App extends Component {
     return (
       <div className="container pt-3">
         <div className="row">
-          <div className="col-7">
+          <div className="col-6">
             <img
               className="w-100"
-              src={this.state.carInfo.carImg}
+              src={this.state.carInfo.imgUrl}
               alt="car.jpg"
             />
           </div>
-          <div className="col-5">
+          <div className="col-6">
+            <div className="card">
+              <div className="card-header text-black">
+                <h3>Car Infomation</h3>
+              </div>
+              <table className="table border border-color-right m-0" border={1}>
+                <tr>
+                  <th>Name</th>
+                  <td>Black Car</td>
+                </tr>
+                <tr>
+                  <th>Color</th>
+                  <td>Black</td>
+                </tr>
+                <tr>
+                  <th>Price</th>
+                  <td>$19.000</td>
+                </tr>
+                <tr>
+                  <th>Engine Type</th>
+                  <td>In-linre-4cylinder</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div className="row mt-4">
+          <div className="col-6">
             <div className="card pb-1">
-              <div className="card-header text-primary">Exterior Color</div>
-              {cars.map((item, index) => {
-                return (
-                  <div
-                    className="card-body p-0 mt-1 ml-1 mr-1"
-                    style={{ cursor: "pointer" }}
-                    key={index}
-                    onClick={() => {
-                      this.handleCarSelected(item);
-                    }}
-                  >
-                    <div className="d-flex border border-link p-2">
-                      <img
-                        style={{ width: 50, height: 50 }}
-                        src={item.iconImg}
-                        alt=""
-                      />
-                      <div className="ml-3">
-                        <h5>{item.title}</h5>
-                        <p className="m-0 p-0">{item.type}</p>
-                      </div>
-                    </div>
-                  </div>
-                );
-              })}
+              <div className="card-header">
+                <b>Pick Colors</b>
+              </div>
+              {this.renderModels()}
+            </div>
+          </div>
+          <div className="col-6">
+            <div className="card pb-1">
+              <div className="card-header">
+                <b>Pick Wheels</b>
+              </div>
+              {this.renderWheels()}
             </div>
           </div>
         </div>
