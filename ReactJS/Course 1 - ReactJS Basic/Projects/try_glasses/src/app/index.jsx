@@ -5,13 +5,7 @@ import "./style.css";
 
 export default class App extends Component {
   state = {
-    glasses: {
-      id: 1,
-      price: 30,
-      name: "GUCCI G8850U",
-      url: "https://res.cloudinary.com/dtjin3cf6/image/upload/v1668524852/Cyberlearn/ReactJS/Try%20Glasses/v1_ilqmgg.png",
-      desc: "Light pink square lenses define these sunglasses, ending with amother of pearl effect tip. ",
-    },
+    glasses: data[0],
   };
 
   changeGlasses = (newGlasses) => {
@@ -73,7 +67,7 @@ export default class App extends Component {
       <div
         style={{
           backgroundImage:
-            "url(https://res.cloudinary.com/dtjin3cf6/image/upload/v1668524853/Cyberlearn/ReactJS/Try%20Glasses/background_hniydj.jpg)",
+            "url(https://res.cloudinary.com/dtjin3cf6/image/upload/v1668691988/Cyberlearn/ReactJS/Course%201%20-%20ReactJS%20Basic/Projects/Try%20Glasses/background_p1es9i.jpg)",
           backgroundRepeat: "no-repeat",
           height: "100vh",
           backgroundPosition: "center",
@@ -101,7 +95,7 @@ export default class App extends Component {
               <div className="col-6">
                 <div className="position-relative">
                   <img
-                    src="https://res.cloudinary.com/dtjin3cf6/image/upload/v1668524852/Cyberlearn/ReactJS/Try%20Glasses/model_p6unnq.jpg"
+                    src="https://res.cloudinary.com/dtjin3cf6/image/upload/v1668691987/Cyberlearn/ReactJS/Course%201%20-%20ReactJS%20Basic/Projects/Try%20Glasses/model_tyszog.jpg"
                     alt="model.jpg"
                     style={{ width: "250px", position: "absolute", right: 100 }}
                   />
@@ -124,7 +118,7 @@ export default class App extends Component {
               <div className="col-6">
                 <div className="position-relative">
                   <img
-                    src="https://res.cloudinary.com/dtjin3cf6/image/upload/v1668524852/Cyberlearn/ReactJS/Try%20Glasses/model_p6unnq.jpg"
+                    src="https://res.cloudinary.com/dtjin3cf6/image/upload/v1668691987/Cyberlearn/ReactJS/Course%201%20-%20ReactJS%20Basic/Projects/Try%20Glasses/model_tyszog.jpg"
                     alt="model.jpg"
                     style={{ width: "250px", position: "absolute", left: 100 }}
                   />
