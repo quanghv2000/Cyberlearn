@@ -1,5 +1,5 @@
 import React from "react";
-import logoCoral from "src/assets/imgs/logo-coral.svg";
+// import logoCoral from "src/assets/imgs/logo-coral.svg";
 
 export const Footer = () => {
   return (
@@ -12,7 +12,12 @@ export const Footer = () => {
               href="/"
               aria-label="Bootstrap"
             >
-              <img src={logoCoral} alt="logoCoral" style={{width: '160px'}} className="mb-2"/>
+              <img
+                src="https://res.cloudinary.com/dtjin3cf6/image/upload/v1668834795/Cyberlearn/ReactJS/Course%201%20-%20ReactJS%20Basic/Projects/Elearning%20Layout/logo-coral_b1gqhy.svg"
+                alt="logoCoral"
+                style={{ width: "160px" }}
+                className="mb-2"
+              />
             </a>
             <ul className="list-unstyled small text-muted">
               <li className="mb-2">

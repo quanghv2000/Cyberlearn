@@ -6,7 +6,7 @@ import './jobs.scss';
 export const Jobs = () => {
   return (
     <section className="jobs">
-      <div className="jobs-content">
+      <div className="jobs-content container">
         <div className="row">
           <div className="col-6 border-right">
             <div className="jobs-item">

@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "src/app/components";
 import { InputSearch } from "src/app/components/input-search";
-import logoCoral from "src/assets/imgs/logo-coral.svg";
+// import logoCoral from "src/assets/imgs/logo-coral.svg";
 import "./header.scss";
 
 export const Header = () => {
@@ -12,7 +12,10 @@ export const Header = () => {
           <div className="col-7 navbar-left">
             <div className="navbar-logo">
               <a href="/elearning">
-                <img src={logoCoral} alt="Logo" />
+                <img
+                  src="https://res.cloudinary.com/dtjin3cf6/image/upload/v1668834795/Cyberlearn/ReactJS/Course%201%20-%20ReactJS%20Basic/Projects/Elearning%20Layout/logo-coral_b1gqhy.svg"
+                  alt="Logo"
+                />
               </a>
             </div>
             <div className="navbar-categories">
