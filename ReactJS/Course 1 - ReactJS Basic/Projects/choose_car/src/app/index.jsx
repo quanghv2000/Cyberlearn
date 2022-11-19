@@ -69,60 +69,69 @@ export default class App extends Component {
 
   render() {
     return (
-      <div className="container pt-3">
-        <div className="row">
-          <div className="col-6">
-            <img
-              className="w-100"
-              src={this.state.carInfo.imgUrl}
-              alt="car.jpg"
-            />
-          </div>
-          <div className="col-6">
-            <div className="card">
-              <div className="card-header text-black">
-                <h3>Car Infomation</h3>
+      <>
+        <div className="container pt-3">
+          <div className="row">
+            {/* Car Image */}
+            <div className="col-6">
+              <img
+                className="w-100"
+                src={this.state.carInfo.imgUrl}
+                alt="car.jpg"
+              />
+            </div>
+            {/* Car Info */}
+            <div className="col-6">
+              <div className="card">
+                <div className="card-header text-black">
+                  <h3>Car Infomation</h3>
+                </div>
+                <table
+                  className="table border border-color-right m-0"
+                  border={1}
+                >
+                  <tr>
+                    <th>Name</th>
+                    <td>{this.state.carInfo.name}</td>
+                  </tr>
+                  <tr>
+                    <th>Color</th>
+                    <td>{this.state.carInfo.color}</td>
+                  </tr>
+                  <tr>
+                    <th>Price</th>
+                    <td>${this.state.carInfo.price.toLocaleString()}</td>
+                  </tr>
+                  <tr>
+                    <th>Engine Type</th>
+                    <td>In-linre-4cylinder</td>
+                  </tr>
+                </table>
               </div>
-              <table className="table border border-color-right m-0" border={1}>
-                <tr>
-                  <th>Name</th>
-                  <td>Black Car</td>
-                </tr>
-                <tr>
-                  <th>Color</th>
-                  <td>Black</td>
-                </tr>
-                <tr>
-                  <th>Price</th>
-                  <td>$19.000</td>
-                </tr>
-                <tr>
-                  <th>Engine Type</th>
-                  <td>In-linre-4cylinder</td>
-                </tr>
-              </table>
+            </div>
+          </div>
+          <div className="row mt-4">
+            {/* Pick Color */}
+            <div className="col-6">
+              <div className="card pb-1">
+                <div className="card-header">
+                  <b>Pick Colors</b>
+                </div>
+                {this.renderModels()}
+              </div>
+            </div>
+            {/* Pick Wheels */}
+            <div className="col-6">
+              <div className="card pb-1">
+                <div className="card-header">
+                  <b>Pick Wheels</b>
+                </div>
+                {this.renderWheels()}
+              </div>
             </div>
           </div>
         </div>
-        <div className="row mt-4">
-          <div className="col-6">
-            <div className="card pb-1">
-              <div className="card-header">
-                <b>Pick Colors</b>
-              </div>
-              {this.renderModels()}
-            </div>
-          </div>
-          <div className="col-6">
-            <div className="card pb-1">
-              <div className="card-header">
-                <b>Pick Wheels</b>
-              </div>
-              {this.renderWheels()}
-            </div>
-          </div>
-        </div>
-      </div>
+      </>
     );
   }
 }
