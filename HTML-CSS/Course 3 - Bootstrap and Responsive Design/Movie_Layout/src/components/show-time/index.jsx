@@ -1,15 +1,6 @@
 import React from "react";
-import movie5 from "../../assets/imgs/movie-5.jpg";
-import movie6 from "../../assets/imgs/movie-6.jpg";
-import movie7 from "../../assets/imgs/movie-7.jpg";
-import movie8 from "../../assets/imgs/movie-8.jpg";
-import movie9 from "../../assets/imgs/movie-9.jpg";
-import movie11 from "../../assets/imgs/movie-11.jpg";
-import movie12 from "../../assets/imgs/movie-12.jpg";
-import movie13 from "../../assets/imgs/movie-13.jpg";
-import movie14 from "../../assets/imgs/movie-14.jpg";
 
-import './show-time.css';
+import "./show-time.css";
 
 export const ShowTime = () => {
   return (
@@ -97,7 +88,11 @@ export const ShowTime = () => {
         <div className="tab-pane fade show active" id="mon" role="tabpanel">
           <div className="row py-5 show-time-item">
             <div className="col-2">
-              <img src={movie5} alt="" className="img-fluid"/>
+              <img
+                src="https://res.cloudinary.com/dtjin3cf6/image/upload/v1668831547/Cyberlearn/ReactJS/Course%201%20-%20ReactJS%20Basic/Projects/Movies%20Layout/movie-5_jdnwf0.jpg"
+                alt=""
+                className="img-fluid"
+              />
             </div>
             <div className="col-10">
               <p>ACTION, ADVENTURE, FANTASY</p>
@@ -117,7 +112,9 @@ export const ShowTime = () => {
                     VIEWING TIME
                   </span>
                   <div className="show-times">
-                    <button className="btn btn-success" disabled>10:30</button>
+                    <button className="btn btn-success" disabled>
+                      10:30
+                    </button>
                     <button className="btn btn-success">12:30</button>
                     <button className="btn btn-success">14:30</button>
                     <button className="btn btn-success">16:30</button>
@@ -131,7 +128,11 @@ export const ShowTime = () => {
           </div>
           <div className="row py-5 show-time-item">
             <div className="col-2">
-              <img src={movie6} alt="" className="img-fluid"/>
+              <img
+                src="https://res.cloudinary.com/dtjin3cf6/image/upload/v1668831545/Cyberlearn/ReactJS/Course%201%20-%20ReactJS%20Basic/Projects/Movies%20Layout/movie-6_r8pqw0.jpg"
+                alt=""
+                className="img-fluid"
+              />
             </div>
             <div className="col-10">
               <p>ACTION, ADVENTURE, FANTASY</p>
@@ -151,7 +152,9 @@ export const ShowTime = () => {
                     VIEWING TIME
                   </span>
                   <div className="show-times">
-                    <button className="btn btn-success" disabled>10:30</button>
+                    <button className="btn btn-success" disabled>
+                      10:30
+                    </button>
                     <button className="btn btn-success">12:30</button>
                     <button className="btn btn-success">14:30</button>
                     <button className="btn btn-success">16:30</button>
@@ -165,7 +168,11 @@ export const ShowTime = () => {
           </div>
           <div className="row py-5 show-time-item">
             <div className="col-2">
-              <img src={movie7} alt="" className="img-fluid"/>
+              <img
+                src="https://res.cloudinary.com/dtjin3cf6/image/upload/v1668831545/Cyberlearn/ReactJS/Course%201%20-%20ReactJS%20Basic/Projects/Movies%20Layout/movie-7_lxmphr.jpg"
+                alt=""
+                className="img-fluid"
+              />
             </div>
             <div className="col-10">
               <p>ACTION, ADVENTURE, FANTASY</p>
@@ -185,7 +192,9 @@ export const ShowTime = () => {
                     VIEWING TIME
                   </span>
                   <div className="show-times">
-                    <button className="btn btn-success" disabled>10:30</button>
+                    <button className="btn btn-success" disabled>
+                      10:30
+                    </button>
                     <button className="btn btn-success">12:30</button>
                     <button className="btn btn-success">14:30</button>
                     <button className="btn btn-success">16:30</button>
@@ -200,9 +209,13 @@ export const ShowTime = () => {
         </div>
 
         <div className="tab-pane fade" id="tue" role="tabpanel">
-        <div className="row py-5 show-time-item">
+          <div className="row py-5 show-time-item">
             <div className="col-2">
-              <img src={movie7} alt="" className="img-fluid"/>
+              <img
+                src="https://res.cloudinary.com/dtjin3cf6/image/upload/v1668831545/Cyberlearn/ReactJS/Course%201%20-%20ReactJS%20Basic/Projects/Movies%20Layout/movie-7_lxmphr.jpg"
+                alt=""
+                className="img-fluid"
+              />
             </div>
             <div className="col-10">
               <p>ACTION, ADVENTURE, FANTASY</p>
@@ -222,7 +235,9 @@ export const ShowTime = () => {
                     VIEWING TIME
                   </span>
                   <div className="show-times">
-                    <button className="btn btn-success" disabled>10:30</button>
+                    <button className="btn btn-success" disabled>
+                      10:30
+                    </button>
                     <button className="btn btn-success">12:30</button>
                     <button className="btn btn-success">14:30</button>
                     <button className="btn btn-success">16:30</button>
@@ -236,7 +251,11 @@ export const ShowTime = () => {
           </div>
           <div className="row py-5 show-time-item">
             <div className="col-2">
-              <img src={movie8} alt="" className="img-fluid"/>
+              <img
+                src="https://res.cloudinary.com/dtjin3cf6/image/upload/v1668831545/Cyberlearn/ReactJS/Course%201%20-%20ReactJS%20Basic/Projects/Movies%20Layout/movie-8_qmoucp.jpg"
+                alt=""
+                className="img-fluid"
+              />
             </div>
             <div className="col-10">
               <p>ACTION, ADVENTURE, FANTASY</p>
@@ -256,7 +275,9 @@ export const ShowTime = () => {
                     VIEWING TIME
                   </span>
                   <div className="show-times">
-                    <button className="btn btn-success" disabled>10:30</button>
+                    <button className="btn btn-success" disabled>
+                      10:30
+                    </button>
                     <button className="btn btn-success">12:30</button>
                     <button className="btn btn-success">14:30</button>
                     <button className="btn btn-success">16:30</button>
@@ -270,9 +291,13 @@ export const ShowTime = () => {
           </div>
         </div>
         <div className="tab-pane fade" id="wed" role="tabpanel">
-        <div className="row py-5 show-time-item">
+          <div className="row py-5 show-time-item">
             <div className="col-2">
-              <img src={movie12} alt="" className="img-fluid"/>
+              <img
+                src="https://res.cloudinary.com/dtjin3cf6/image/upload/v1668831547/Cyberlearn/ReactJS/Course%201%20-%20ReactJS%20Basic/Projects/Movies%20Layout/movie-12_tlt8eu.jpg"
+                alt=""
+                className="img-fluid"
+              />
             </div>
             <div className="col-10">
               <p>ACTION, ADVENTURE, FANTASY</p>
@@ -292,7 +317,9 @@ export const ShowTime = () => {
                     VIEWING TIME
                   </span>
                   <div className="show-times">
-                    <button className="btn btn-success" disabled>10:30</button>
+                    <button className="btn btn-success" disabled>
+                      10:30
+                    </button>
                     <button className="btn btn-success">12:30</button>
                     <button className="btn btn-success">14:30</button>
                     <button className="btn btn-success">16:30</button>
@@ -306,7 +333,11 @@ export const ShowTime = () => {
           </div>
           <div className="row py-5 show-time-item">
             <div className="col-2">
-              <img src={movie11} alt="" className="img-fluid"/>
+              <img
+                src="https://res.cloudinary.com/dtjin3cf6/image/upload/v1668831549/Cyberlearn/ReactJS/Course%201%20-%20ReactJS%20Basic/Projects/Movies%20Layout/movie-11_tx6mjh.jpg"
+                alt=""
+                className="img-fluid"
+              />
             </div>
             <div className="col-10">
               <p>ACTION, ADVENTURE, FANTASY</p>
@@ -326,7 +357,9 @@ export const ShowTime = () => {
                     VIEWING TIME
                   </span>
                   <div className="show-times">
-                    <button className="btn btn-success" disabled>10:30</button>
+                    <button className="btn btn-success" disabled>
+                      10:30
+                    </button>
                     <button className="btn btn-success">12:30</button>
                     <button className="btn btn-success">14:30</button>
                     <button className="btn btn-success">16:30</button>
@@ -340,9 +373,13 @@ export const ShowTime = () => {
           </div>
         </div>
         <div className="tab-pane fade" id="thu" role="tabpanel">
-        <div className="row py-5 show-time-item">
+          <div className="row py-5 show-time-item">
             <div className="col-2">
-              <img src={movie13} alt="" className="img-fluid"/>
+              <img
+                src="https://res.cloudinary.com/dtjin3cf6/image/upload/v1668831549/Cyberlearn/ReactJS/Course%201%20-%20ReactJS%20Basic/Projects/Movies%20Layout/movie-13_ndrnef.jpg"
+                alt=""
+                className="img-fluid"
+              />
             </div>
             <div className="col-10">
               <p>ACTION, ADVENTURE, FANTASY</p>
@@ -362,7 +399,9 @@ export const ShowTime = () => {
                     VIEWING TIME
                   </span>
                   <div className="show-times">
-                    <button className="btn btn-success" disabled>10:30</button>
+                    <button className="btn btn-success" disabled>
+                      10:30
+                    </button>
                     <button className="btn btn-success">12:30</button>
                     <button className="btn btn-success">14:30</button>
                     <button className="btn btn-success">16:30</button>
@@ -376,7 +415,11 @@ export const ShowTime = () => {
           </div>
           <div className="row py-5 show-time-item">
             <div className="col-2">
-              <img src={movie14} alt="" className="img-fluid"/>
+              <img
+                src="https://res.cloudinary.com/dtjin3cf6/image/upload/v1668831546/Cyberlearn/ReactJS/Course%201%20-%20ReactJS%20Basic/Projects/Movies%20Layout/movie-14_qxr6ol.jpg"
+                alt=""
+                className="img-fluid"
+              />
             </div>
             <div className="col-10">
               <p>ACTION, ADVENTURE, FANTASY</p>
@@ -396,7 +439,9 @@ export const ShowTime = () => {
                     VIEWING TIME
                   </span>
                   <div className="show-times">
-                    <button className="btn btn-success" disabled>10:30</button>
+                    <button className="btn btn-success" disabled>
+                      10:30
+                    </button>
                     <button className="btn btn-success">12:30</button>
                     <button className="btn btn-success">14:30</button>
                     <button className="btn btn-success">16:30</button>
@@ -410,9 +455,13 @@ export const ShowTime = () => {
           </div>
         </div>
         <div className="tab-pane fade" id="fri" role="tabpanel">
-        <div className="row py-5 show-time-item">
+          <div className="row py-5 show-time-item">
             <div className="col-2">
-              <img src={movie6} alt="" className="img-fluid"/>
+              <img
+                src="https://res.cloudinary.com/dtjin3cf6/image/upload/v1668831545/Cyberlearn/ReactJS/Course%201%20-%20ReactJS%20Basic/Projects/Movies%20Layout/movie-6_r8pqw0.jpg"
+                alt=""
+                className="img-fluid"
+              />
             </div>
             <div className="col-10">
               <p>ACTION, ADVENTURE, FANTASY</p>
@@ -432,7 +481,9 @@ export const ShowTime = () => {
                     VIEWING TIME
                   </span>
                   <div className="show-times">
-                    <button className="btn btn-success" disabled>10:30</button>
+                    <button className="btn btn-success" disabled>
+                      10:30
+                    </button>
                     <button className="btn btn-success">12:30</button>
                     <button className="btn btn-success">14:30</button>
                     <button className="btn btn-success">16:30</button>
@@ -446,7 +497,11 @@ export const ShowTime = () => {
           </div>
           <div className="row py-5 show-time-item">
             <div className="col-2">
-              <img src={movie7} alt="" className="img-fluid"/>
+              <img
+                src="https://res.cloudinary.com/dtjin3cf6/image/upload/v1668831545/Cyberlearn/ReactJS/Course%201%20-%20ReactJS%20Basic/Projects/Movies%20Layout/movie-7_lxmphr.jpg"
+                alt=""
+                className="img-fluid"
+              />
             </div>
             <div className="col-10">
               <p>ACTION, ADVENTURE, FANTASY</p>
@@ -466,7 +521,9 @@ export const ShowTime = () => {
                     VIEWING TIME
                   </span>
                   <div className="show-times">
-                    <button className="btn btn-success" disabled>10:30</button>
+                    <button className="btn btn-success" disabled>
+                      10:30
+                    </button>
                     <button className="btn btn-success">12:30</button>
                     <button className="btn btn-success">14:30</button>
                     <button className="btn btn-success">16:30</button>
@@ -480,9 +537,13 @@ export const ShowTime = () => {
           </div>
         </div>
         <div className="tab-pane fade" id="sat" role="tabpanel">
-        <div className="row py-5 show-time-item">
+          <div className="row py-5 show-time-item">
             <div className="col-2">
-              <img src={movie11} alt="" className="img-fluid"/>
+              <img
+                src="https://res.cloudinary.com/dtjin3cf6/image/upload/v1668831549/Cyberlearn/ReactJS/Course%201%20-%20ReactJS%20Basic/Projects/Movies%20Layout/movie-11_tx6mjh.jpg"
+                alt=""
+                className="img-fluid"
+              />
             </div>
             <div className="col-10">
               <p>ACTION, ADVENTURE, FANTASY</p>
@@ -502,7 +563,9 @@ export const ShowTime = () => {
                     VIEWING TIME
                   </span>
                   <div className="show-times">
-                    <button className="btn btn-success" disabled>10:30</button>
+                    <button className="btn btn-success" disabled>
+                      10:30
+                    </button>
                     <button className="btn btn-success">12:30</button>
                     <button className="btn btn-success">14:30</button>
                     <button className="btn btn-success">16:30</button>
@@ -516,7 +579,11 @@ export const ShowTime = () => {
           </div>
           <div className="row py-5 show-time-item">
             <div className="col-2">
-              <img src={movie9} alt="" className="img-fluid"/>
+              <img
+                src="https://res.cloudinary.com/dtjin3cf6/image/upload/v1668831548/Cyberlearn/ReactJS/Course%201%20-%20ReactJS%20Basic/Projects/Movies%20Layout/movie-9_bbzkn3.jpg"
+                alt=""
+                className="img-fluid"
+              />
             </div>
             <div className="col-10">
               <p>ACTION, ADVENTURE, FANTASY</p>
@@ -536,7 +603,9 @@ export const ShowTime = () => {
                     VIEWING TIME
                   </span>
                   <div className="show-times">
-                    <button className="btn btn-success" disabled>10:30</button>
+                    <button className="btn btn-success" disabled>
+                      10:30
+                    </button>
                     <button className="btn btn-success">12:30</button>
                     <button className="btn btn-success">14:30</button>
                     <button className="btn btn-success">16:30</button>
@@ -550,9 +619,13 @@ export const ShowTime = () => {
           </div>
         </div>
         <div className="tab-pane fade" id="sun" role="tabpanel">
-        <div className="row py-5 show-time-item">
+          <div className="row py-5 show-time-item">
             <div className="col-2">
-              <img src={movie12} alt="" className="img-fluid"/>
+              <img
+                src="https://res.cloudinary.com/dtjin3cf6/image/upload/v1668831547/Cyberlearn/ReactJS/Course%201%20-%20ReactJS%20Basic/Projects/Movies%20Layout/movie-12_tlt8eu.jpg"
+                alt=""
+                className="img-fluid"
+              />
             </div>
             <div className="col-10">
               <p>ACTION, ADVENTURE, FANTASY</p>
@@ -572,7 +645,9 @@ export const ShowTime = () => {
                     VIEWING TIME
                   </span>
                   <div className="show-times">
-                    <button className="btn btn-success" disabled>10:30</button>
+                    <button className="btn btn-success" disabled>
+                      10:30
+                    </button>
                     <button className="btn btn-success">12:30</button>
                     <button className="btn btn-success">14:30</button>
                     <button className="btn btn-success">16:30</button>
@@ -586,7 +661,11 @@ export const ShowTime = () => {
           </div>
           <div className="row py-5 show-time-item">
             <div className="col-2">
-              <img src={movie8} alt="" className="img-fluid"/>
+              <img
+                src="https://res.cloudinary.com/dtjin3cf6/image/upload/v1668831545/Cyberlearn/ReactJS/Course%201%20-%20ReactJS%20Basic/Projects/Movies%20Layout/movie-8_qmoucp.jpg"
+                alt=""
+                className="img-fluid"
+              />
             </div>
             <div className="col-10">
               <p>ACTION, ADVENTURE, FANTASY</p>
@@ -606,7 +685,9 @@ export const ShowTime = () => {
                     VIEWING TIME
                   </span>
                   <div className="show-times">
-                    <button className="btn btn-success" disabled>10:30</button>
+                    <button className="btn btn-success" disabled>
+                      10:30
+                    </button>
                     <button className="btn btn-success">12:30</button>
                     <button className="btn btn-success">14:30</button>
                     <button className="btn btn-success">16:30</button>

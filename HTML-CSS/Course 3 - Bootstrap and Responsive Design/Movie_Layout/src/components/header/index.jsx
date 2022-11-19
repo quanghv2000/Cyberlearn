@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "../../assets/imgs/logo.svg";
 
 import "./header.css";
 
@@ -14,7 +13,10 @@ export const Header = () => {
         </p>
         <nav className="navbar navbar-expand-sm">
           <a className="navbar-brand" href="/">
-            <img src={logo} alt="logo" />
+            <img
+              src="https://res.cloudinary.com/dtjin3cf6/image/upload/v1668831547/Cyberlearn/ReactJS/Course%201%20-%20ReactJS%20Basic/Projects/Movies%20Layout/logo_adspjr.svg"
+              alt="logo"
+            />
           </a>
           <button
             className="navbar-toggler d-lg-none"

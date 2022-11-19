@@ -1,7 +1,4 @@
 import React from "react";
-import hero1 from "../../assets/imgs/hero-1.jpg";
-import hero2 from "../../assets/imgs/hero-2.jpg";
-import hero3 from "../../assets/imgs/hero-3.jpg";
 
 import "./carousel.css";
 
@@ -23,7 +20,11 @@ export const Carousel = () => {
       </ol>
       <div className="carousel-inner">
         <div className="carousel-item active">
-          <img className="d-block w-100" src={hero1} alt="First slide" />
+          <img
+            className="d-block w-100"
+            src="https://res.cloudinary.com/dtjin3cf6/image/upload/v1668831547/Cyberlearn/ReactJS/Course%201%20-%20ReactJS%20Basic/Projects/Movies%20Layout/hero-1_oknmyo.jpg"
+            alt="First slide"
+          />
           <div className="carousel-overlay"></div>
           <div className="container carousel-caption d-none d-md-block">
             <div className="col-9">
@@ -47,7 +48,11 @@ export const Carousel = () => {
           </div>
         </div>
         <div className="carousel-item">
-          <img className="d-block w-100" src={hero2} alt="Second slide" />
+          <img
+            className="d-block w-100"
+            src="https://res.cloudinary.com/dtjin3cf6/image/upload/v1668831546/Cyberlearn/ReactJS/Course%201%20-%20ReactJS%20Basic/Projects/Movies%20Layout/hero-2_picazc.jpg"
+            alt="Second slide"
+          />
           <div className="carousel-overlay"></div>
           <div className="container carousel-caption d-none d-md-block">
             <div className="col-9">
@@ -71,7 +76,11 @@ export const Carousel = () => {
           </div>
         </div>
         <div className="carousel-item">
-          <img className="d-block w-100" src={hero3} alt="Third slide" />
+          <img
+            className="d-block w-100"
+            src="https://res.cloudinary.com/dtjin3cf6/image/upload/v1668831546/Cyberlearn/ReactJS/Course%201%20-%20ReactJS%20Basic/Projects/Movies%20Layout/hero-3_xscsgj.jpg"
+            alt="Third slide"
+          />
           <div className="carousel-overlay"></div>
           <div className="container carousel-caption d-none d-md-block">
             <div className="col-9">
